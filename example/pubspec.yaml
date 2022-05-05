@@ -1,0 +1,101 @@
+name: js_design_kit_example
+description: Demonstrates how to use the js_design_kit plugin.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  js_design_kit:
+    # When depending on this package from a real application you should use:
+    #   js_design_kit: ^x.y.z
+    # See https://dart.dev/tools/pub/dependencies#version-constraints
+    # The example app is bundled with the plugin so we use a path dependency on
+    # the parent directory to use the current plugin's version.
+    path: ../
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+
+  # 响应式布局 (ANDROID IOS LINUX MACOS WINDOWS)
+  responsive_framework: ^0.1.5
+
+  # getX 状态管理+路由管理 (ANDROID IOS LINUX MACOS WEB WINDOWS)
+  # get: 4.3.8
+
+  # 日志打印 (ANDROID IOS LINUX MACOS WEB WINDOWS)
+  logger: ^1.1.0
+
+  # http (ANDROID IOS LINUX MACOS WEB WINDOWS)
+  dio: ^4.0.4
+
+  # EventBus (ANDROID IOS LINUX MACOS WEB WINDOWS)
+  event_bus: ^2.0.0
+
+  # 图表 (ANDROID IOS LINUX MACOS WEB WINDOWS)
+  syncfusion_flutter_charts: ^19.3.53
+
+  # 分组列表 (ANDROID IOS LINUX MACOS WEB WINDOWS)
+  cupertino_listview: ^2.0.0
+
+  # 元组 (ANDROID IOS LINUX MACOS WEB WINDOWS)
+  tuple: ^2.0.0
+
+  # isolate
+  worker_manager: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - lib/assets/fonts/
+    - lib/assets/images/
+    - lib/assets/json/
+    - lib/assets/lottie/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: DINRegular
+      fonts:
+        - asset: lib/assets/fonts/DIN-Regular.ttf
+          weight: 300
+
+    - family: DINMedium
+      fonts:
+        - asset: lib/assets/fonts/DIN-Medium.ttf
+          weight: 500
+
+    - family: DINBold
+      fonts:
+        - asset: lib/assets/fonts/DIN-Bold.ttf
+          weight: 700
