@@ -30,7 +30,7 @@ dependencies:
   image_picker: ^0.8.4+1
 
   # getX 状态管理+路由管理 (ANDROID IOS LINUX MACOS WEB WINDOWS)
-  get: 4.3.8
+  get: 4.6.5
 
 dev_dependencies:
   flutter_test:

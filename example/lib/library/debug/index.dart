@@ -38,7 +38,7 @@ class _SMDebugToolsState extends State<SMDebugTools> {
 
   @override
   Widget build(BuildContext context) {
-    WidgetsBinding.instance?.addPostFrameCallback((_) => _insertOverlay(context));
+    WidgetsBinding.instance.addPostFrameCallback((_) => _insertOverlay(context));
 
     return LayoutBuilder(
       builder: (context, constraints) {

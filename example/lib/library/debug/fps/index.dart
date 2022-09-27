@@ -47,7 +47,7 @@ class SMFPSManager {
    * @time          7/28/21 2:44 PM
    */
   void removerListenerScheduler() {
-    SchedulerBinding.instance?.removeTimingsCallback(_onReportTimings);
+    SchedulerBinding.instance.removeTimingsCallback(_onReportTimings);
   }
 
   /*
